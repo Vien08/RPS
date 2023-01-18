@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Rock Paper Scissors</title>
+</head>
+  <body>
+      <div class="container">
+      <header class="display-5 text-center mt-4">Rock Paper Scissors</header>
+      <header class="display-6 text-center mt-4">Best of Five</header>
+        <br><br>
+          <div class="row justify-content-center mgabtn">
+            <div class="col-4 col-md-3 col-lg-2">
+                <button id="btnrock" onclick="rock();" class="btn btn-danger rounded-circle border border-2 border-dark"><img id="pic1" class="img-fluid" src="Image/Rock.png">Rock</button>
+            </div>
+            <div class="col-4 col-md-3 col-lg-2">
+                <button id="btnpaper" onclick="paper();" class="btn btn-warning rounded-circle border border-2 border-dark"><img id="pic2" class="img-fluid" src="Image/Paper.png">Paper</button>
+            </div>
+            <div class="col-4 col-md-3 col-lg-2">
+                <button id="btnscissors" onclick="scissors();" class="btn btn-success rounded-circle border border-2 border-dark"><img id="pic3" class="img-fluid" src="Image/Scissors.png">Scissors</button>
+            </div>
+            <div>
+        </div>
+        
+
+        <section>
+          <div class="row d-flex justify-content-center text-center mt-5">
+            <div class="col-4 h4">Your Score
+              <div id="plyrscore"></div>
+            </div>
+            <div class="col-4 h4"></div>
+            <div class="col-4  h4">Computer Score
+              <div id="pcscore"></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row d-flex justify-content-center text-center mt-5">
+            <div class="col-4 h4"><span id="plyrresult"></span></div>
+            <div class="col-4 h4"><span id="resultposted">Ready !</span></div>
+            <div class="col-4 h4"><span id="pcresult"></span></div>
+          </div>
+        </section>
+        <h2 class="mt-4 text-center">Match History</h2>
+        <section>
+          <div class="text-center">
+            <h4 id="history"></h4>
+          </div>
+        </section>
+      </div>
+  </body> 
+  <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

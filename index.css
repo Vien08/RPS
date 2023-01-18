@@ -1,0 +1,12 @@
+body{
+    font-family: Patua one;
+    background-color: rgb(177, 205, 241);
+}
+.btn{
+    transition: 100ms;
+}
+.btn:hover{
+    transform: scale(1.1);
+    
+}
+
